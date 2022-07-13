@@ -71,7 +71,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;An example of a Metzen&#34; srcset=&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;An example of a Metzen dynamic attack&#34; srcset=&#34;
                /project/tubsrobustcheck/Dynamic_normal_hu94a5d5213474cf1b2b68882e2c646ae6_403630_5cf68257f3c57e29c626bb60a4f3cc72.webp 400w,
                /project/tubsrobustcheck/Dynamic_normal_hu94a5d5213474cf1b2b68882e2c646ae6_403630_e98ad65aba75aa4226a7e8a82f8c9dc6.webp 760w,
                /project/tubsrobustcheck/Dynamic_normal_hu94a5d5213474cf1b2b68882e2c646ae6_403630_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
@@ -82,7 +82,39 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;In this case, instead of fooling the network to produce a some pre-defined (static) image, we fool it into misclassifying some target semantic class of the input image. In this case, we produced a targeted adversarial perturbation to fool the neural network into wrongly classifying pixels of pedestrians. (Stop for a moment and imagine how dangerous would be to have such a system failing/being attacked in this way!)&lt;/p&gt;
-&lt;p&gt;I hope this project presentation could show you the importance of investigating the robustness of semantic segmentation neural networks. Please ping me a message in case one any doubts and have a good experience using our &lt;a href=&#34;https://github.com/ifnspaml/TUBSRobustCheck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TUBSRobustCheck&lt;/a&gt; toolbox!&lt;/p&gt;
+&lt;p&gt;Apart from adversarial attacks, our toolbox also implements diverse corruptions. For that, we followed the work of &lt;a href=&#34;https://arxiv.org/pdf/1903.12261.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hendrycks et al, 2019&lt;/a&gt; and implemented corruptions of four classes: Noise (Gaussian, shot, impulse, and speckle), Blur (defocus, glass, motion, zoom, and Gaussian), Weather (snow, Frost, fog, brightness, and spatter), and Digital (contrast, elastic transform, pixelate, JPEG compression, and saturate). With these classes, we hope to cover some of the most common types of image corruptions.&lt;/p&gt;
+&lt;p&gt;To illustrate the capabilities of our corruption toolbox, below we have some examples:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Diverse examples of corruptions&#34; srcset=&#34;
+               /project/tubsrobustcheck/corruptions_hu35adbfae16189e3e7129a7ebe2250739_527923_869b30c362c544b6b1e78139973c81b1.webp 400w,
+               /project/tubsrobustcheck/corruptions_hu35adbfae16189e3e7129a7ebe2250739_527923_f04257b5bf6b0845e88aff0ae3ff9586.webp 760w,
+               /project/tubsrobustcheck/corruptions_hu35adbfae16189e3e7129a7ebe2250739_527923_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://edgmin.github.io/project/tubsrobustcheck/corruptions_hu35adbfae16189e3e7129a7ebe2250739_527923_869b30c362c544b6b1e78139973c81b1.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;294&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The idea is that we corrupt images by adding some artifact to them. In turn, these artifacts try to depict real-world scenarios. For instance, the frost weather corruption tries to depict the case where there is frost covering the camera lens. Similarly, the motion blur tries to depict the case where some motion affects the image capture process, etc.&lt;/p&gt;
+&lt;p&gt;In summary: the &lt;a href=&#34;https://github.com/ifnspaml/TUBSRobustCheck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TUBSRobustCheck&lt;/a&gt; is a PyTorch-based, architecture-agnostic toolbox that tries to address diverse challenging scenarios that autonomous systems for semantic segmentation may face in the wild. It contains the most common benchmarks to evaluate the robustness of semantic segmentation neural networks against diverse attacks and corruptions.&lt;/p&gt;
+&lt;p&gt;I hope this project presentation could show you the importance of investigating the robustness of semantic segmentation neural networks. Please ping me a message in case one any doubts and have a good experience using the &lt;a href=&#34;https://github.com/ifnspaml/TUBSRobustCheck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TUBSRobustCheck&lt;/a&gt;!&lt;/p&gt;
 </description>
     </item>
     
