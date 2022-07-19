@@ -222,7 +222,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;In 2020, I wrote my masters thesis at the Technical University of Munich where I was supervised by &lt;a href=&#34;https://vision.in.tum.de/members/golkov&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vladimir Golkov&lt;/a&gt; and worked on topics around understanding of deep learning, self-supervised learning, and unsupervised deep domain adaptation. If you are interested in reading more about my master&amp;rsquo;s thesis, please take a look at [this post].&lt;/p&gt;
+&lt;p&gt;In 2020, I wrote my masters thesis at the Technical University of Munich where I was supervised by &lt;a href=&#34;https://vision.in.tum.de/members/golkov&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vladimir Golkov&lt;/a&gt; and worked on topics around understanding of deep learning, self-supervised learning, and unsupervised deep domain adaptation. If you are interested in reading more about my master&amp;rsquo;s thesis, please take a look at &lt;a href=&#34;https://edgmin.github.io/post/masters/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this post&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To conclude, I would like to share my research interests: I am interested in developing autonomous (also aerial) vehicles. In particular, I would like to research about data-efficient methods to improve robotic perception and planning by exploiting strategies such as self-supervised/unsupervised learning, transfer learning, etc. Further, I am also excited about endowing deep learning algorithms with strong learning biases/regularizers to give them the ability to better understand the complex world around us.&lt;/p&gt;
 </description>
     </item>
