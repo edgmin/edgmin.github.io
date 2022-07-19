@@ -308,17 +308,17 @@
   
   <meta property="og:site_name" content="Edgard Minete" />
   <meta property="og:url" content="https://edgmin.github.io/project/tubsrobustcheck/" />
-  <meta property="og:title" content="TUBSRobustCheck | Edgard Minete" />
+  <meta property="og:title" content="TUBSRobustCheck - assessing the robustness of semantic segmentation neural networks | Edgard Minete" />
   <meta property="og:description" content="A PyTorch-based toolbox to evaluate the robustness of semantic segmentation deep neural networks against diverse corruptions and adversarial attacks." /><meta property="og:image" content="https://edgmin.github.io/project/tubsrobustcheck/featured.png" />
     <meta property="twitter:image" content="https://edgmin.github.io/project/tubsrobustcheck/featured.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2022-07-14T00:00:00&#43;00:00"
+        content="2022-07-13T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2022-07-14T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2022-07-13T00:00:00&#43;00:00">
   
 
   
@@ -342,14 +342,14 @@
     "@type": "WebPage",
     "@id": "https://edgmin.github.io/project/tubsrobustcheck/"
   },
-  "headline": "TUBSRobustCheck",
+  "headline": "TUBSRobustCheck - assessing the robustness of semantic segmentation neural networks",
   
   "image": [
     "https://edgmin.github.io/project/tubsrobustcheck/featured.png"
   ],
   
-  "datePublished": "2022-07-14T00:00:00Z",
-  "dateModified": "2022-07-14T00:00:00Z",
+  "datePublished": "2022-07-13T00:00:00Z",
+  "dateModified": "2022-07-13T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -380,7 +380,7 @@
 
 
 
-  <title>TUBSRobustCheck | Edgard Minete</title>
+  <title>TUBSRobustCheck - assessing the robustness of semantic segmentation neural networks | Edgard Minete</title>
 </head>
 
 
@@ -749,7 +749,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>TUBSRobustCheck</h1>
+  <h1>TUBSRobustCheck - assessing the robustness of semantic segmentation neural networks</h1>
 
   
 
@@ -767,7 +767,7 @@
     
       
     
-    Jul 14, 2022
+    Jul 13, 2022
   </span>
   
 
@@ -838,7 +838,7 @@
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 360px;">
   <div style="position: relative">
     <img src="/project/tubsrobustcheck/featured_huf14fa5fa0fb0b9147d3e0512062605e1_1939338_720x2500_fit_q75_h2_lanczos_3.webp" width="720" height="360" alt="" class="featured-image">
-    <span class="article-header-caption">A (left) front-car image overlaid with semantic segmentation prediction of a deep neural network.</span>
+    <span class="article-header-caption">A (left) front-car image overlaid with a semantic segmentation prediction of a deep neural network.</span>
   </div>
 </div>
 
@@ -851,6 +851,7 @@
 <p>During the last two years, I have worked as a research assistant under the supervision of <a href="https://www.tu-braunschweig.de/en/ifn/institute/team/sv/baer" target="_blank" rel="noopener">Andreas Bär</a> at the <a href="https://www.tu-braunschweig.de/en/ifn/institute/dept/sv" target="_blank" rel="noopener">Signal Processing and Machine Learning Group</a> of the <a href="https://www.tu-braunschweig.de/en/" target="_blank" rel="noopener">Technische Universität Braunschweig</a>. During this time, I worked on diverse topics around the robustness of neural networks. Today, I am very happy to share one of the main results of my work, the <a href="https://github.com/ifnspaml/TUBSRobustCheck" target="_blank" rel="noopener">TUBSRobustCheck</a> toolbox! TUBSRobustCheck is a PyTorch-based, architecture-agnostic toolbox developed to enable researchers to assess the robustness of their semantic segmentation neural networks against diverse attacks and corruptions.</p>
 <p>Our proposed toolbox is divided into two blocks: <a href="https://github.com/ifnspaml/TUBSRobustCheck/tree/main/robustness/attacks" target="_blank" rel="noopener">attacks</a>, which contains various individual and universal adversarial attacks, and <a href="https://github.com/ifnspaml/TUBSRobustCheck/tree/main/robustness/corruptions" target="_blank" rel="noopener">corruptions</a>, which implements common image corruptions, as first introduced by <a href="https://arxiv.org/pdf/1903.12261.pdf" target="_blank" rel="noopener">Hendrycks et al, 2019</a>.</p>
 <p>Lets now dive deep into some capabilities of our toolbox!</p>
+<h2 id="the-tubsrobustcheck-attack-toolbox">The TUBSRobustCheck Attack toolbox</h2>
 <p>Among others, our toolbox implements the Fast Gradient Sign Method <a href="https://arxiv.org/abs/1412.6572" target="_blank" rel="noopener">(FGSM)</a> (and its iterative and momentum variants), Generalizable Data-free Universal Adversarial Perturbations <a href="https://arxiv.org/abs/1801.08092" target="_blank" rel="noopener">(GD-UAP)</a>, and the Metzen <a href="https://arxiv.org/abs/1703.01101" target="_blank" rel="noopener">single image</a> and <a href="https://arxiv.org/abs/1704.05712" target="_blank" rel="noopener">universal</a> attacks. Below, I show examples that were produced with our toolbox using a <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320320304143" target="_blank" rel="noopener">SwiftNet</a> as a semantic segmentation neural network.</p>
 <p>
 
@@ -912,6 +913,7 @@
   </div></figure>
 </p>
 <p>In this case, instead of fooling the network to produce some pre-defined (static) image, we fool it into misclassifying some target semantic class of the input image. In this case, we produced a targeted adversarial perturbation to fool the neural network into wrongly classifying pixels of pedestrians. (Stop here for a moment and imagine how dangerous it would be to have a system failing/being attacked in this way!)</p>
+<h2 id="the-tubsrobustcheck-corruption-toolbox">The TUBSRobustCheck Corruption toolbox</h2>
 <p>Apart from adversarial attacks, our toolbox also implements diverse corruptions. For that, we followed the work of <a href="https://arxiv.org/pdf/1903.12261.pdf" target="_blank" rel="noopener">Hendrycks et al, 2019</a> and implemented corruptions of four classes: Noise (Gaussian, shot, impulse, and speckle), Blur (defocus, glass, motion, zoom, and Gaussian), Weather (snow, Frost, fog, brightness, and spatter), and Digital (contrast, elastic transform, pixelate, JPEG compression, and saturate). With these classes, we hope to cover some of the most common types of image corruption.</p>
 <p>To illustrate the capabilities of our corruption toolbox, below we have some examples:</p>
 <p>
@@ -943,8 +945,10 @@
   </div></figure>
 </p>
 <p>The idea is that we corrupt images by adding some artifact to them. In turn, these artifacts try to depict real-world scenarios. For instance, the frost weather corruption tries to depict the case where there is frost covering the camera lens. Similarly, the motion blur tries to depict the case where some motion affects the image capture process, etc.</p>
-<p>In summary: the <a href="https://github.com/ifnspaml/TUBSRobustCheck" target="_blank" rel="noopener">TUBSRobustCheck</a> is a PyTorch-based, architecture-agnostic toolbox that tries to address diverse challenging scenarios that autonomous systems for semantic segmentation may face in the wild. It contains the most common benchmarks to evaluate the robustness of semantic segmentation neural networks against diverse attacks and corruptions.</p>
-<p>I hope this project presentation could show you the importance of investigating the robustness of semantic segmentation neural networks. Please ping me a message in case one any doubts and have a good experience using the <a href="https://github.com/ifnspaml/TUBSRobustCheck" target="_blank" rel="noopener">TUBSRobustCheck</a>!</p>
+<h2 id="final-remarks">Final remarks</h2>
+<p>The <a href="https://github.com/ifnspaml/TUBSRobustCheck" target="_blank" rel="noopener">TUBSRobustCheck</a> is a PyTorch-based, architecture-agnostic toolbox that tries to address diverse challenging scenarios that autonomous systems for semantic segmentation may face in the wild. It contains the most common benchmarks to evaluate the robustness of semantic segmentation neural networks against diverse attacks and corruptions.</p>
+<p>I hope this project presentation could show you the importance of investigating the robustness of semantic segmentation neural networks.  Please ping me a message in case one any doubts and have a good experience using the <a href="https://github.com/ifnspaml/TUBSRobustCheck" target="_blank" rel="noopener">TUBSRobustCheck</a>!</p>
+<p>Feel free to share our toolbox using the links below 😃</p>
 
     </div>
 
@@ -978,7 +982,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://edgmin.github.io/project/tubsrobustcheck/&amp;text=TUBSRobustCheck" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://edgmin.github.io/project/tubsrobustcheck/&amp;text=TUBSRobustCheck%20-%20assessing%20the%20robustness%20of%20semantic%20segmentation%20neural%20networks" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -991,7 +995,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://edgmin.github.io/project/tubsrobustcheck/&amp;t=TUBSRobustCheck" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://edgmin.github.io/project/tubsrobustcheck/&amp;t=TUBSRobustCheck%20-%20assessing%20the%20robustness%20of%20semantic%20segmentation%20neural%20networks" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1004,7 +1008,7 @@
       
       
       <li>
-        <a href="mailto:?subject=TUBSRobustCheck&amp;body=https://edgmin.github.io/project/tubsrobustcheck/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=TUBSRobustCheck%20-%20assessing%20the%20robustness%20of%20semantic%20segmentation%20neural%20networks&amp;body=https://edgmin.github.io/project/tubsrobustcheck/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1017,7 +1021,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://edgmin.github.io/project/tubsrobustcheck/&amp;title=TUBSRobustCheck" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https://edgmin.github.io/project/tubsrobustcheck/&amp;title=TUBSRobustCheck%20-%20assessing%20the%20robustness%20of%20semantic%20segmentation%20neural%20networks" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1030,7 +1034,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=TUBSRobustCheck%20https://edgmin.github.io/project/tubsrobustcheck/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=TUBSRobustCheck%20-%20assessing%20the%20robustness%20of%20semantic%20segmentation%20neural%20networks%20https://edgmin.github.io/project/tubsrobustcheck/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1043,7 +1047,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://edgmin.github.io/project/tubsrobustcheck/&amp;title=TUBSRobustCheck" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://edgmin.github.io/project/tubsrobustcheck/&amp;title=TUBSRobustCheck%20-%20assessing%20the%20robustness%20of%20semantic%20segmentation%20neural%20networks" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>

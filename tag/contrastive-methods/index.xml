@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contrastive methods | Edgard Minete</title>
+    <link>https://edgmin.github.io/tag/contrastive-methods/</link>
+      <atom:link href="https://edgmin.github.io/tag/contrastive-methods/index.xml" rel="self" type="application/rss+xml" />
+    <description>Contrastive methods</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 17 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://edgmin.github.io/media/icon_hua2b1b6d47a67b4a2c33931043b472208_26072_512x512_fill_lanczos_center_3.PNG</url>
+      <title>Contrastive methods</title>
+      <link>https://edgmin.github.io/tag/contrastive-methods/</link>
+    </image>
+    
+    <item>
+      <title>Strategies for increasing data-efficiency in deep learning</title>
+      <link>https://edgmin.github.io/post/masters/</link>
+      <pubDate>Sun, 17 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://edgmin.github.io/post/masters/</guid>
+      <description>&lt;p&gt;In this post, I would like to talk a bit about the work I developed during my master&amp;rsquo;s thesis at the &lt;a href=&#34;https://cvai.in.tum.de/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Computer Vision &amp;amp; Artificial Intelligence Group&lt;/a&gt; of the Technical University of Munich, under the supervision of &lt;a href=&#34;https://vision.in.tum.de/members/golkov&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dr. Vladimir Golkov&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To begin with, I believe it is worth explaining how I end up writing my master&amp;rsquo;s thesis at the TU Munich, since I was pursuing my master&amp;rsquo;s studies at the TU Braunschweig.&lt;/p&gt;
+&lt;p&gt;In my life, I have always been trying to plan the next steps well in advance - though many times it did not work as planned. Further, as evidenced in my previous post &amp;ldquo;A multidisciplinary Journey&amp;rdquo;, I started to enjoy more and more to study the &amp;lsquo;behind the scenes&amp;rsquo; of deep learning. That&amp;rsquo;s it, to really understand the concepts that lead state-of-the-art methods to become what they became.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;What lies ahead? Image credit: &amp;lt;a href=&amp;#34;https://unsplash.com/photos/K2u71wv2eI4&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;&amp;lt;strong&amp;gt;Unsplash&amp;lt;/strong&amp;gt;&amp;lt;/a&amp;gt;&#34; srcset=&#34;
+               /post/masters/back_head_hucdb173c52266abd73a3e5f72ca9b44e7_2187159_9d956ce347f2f7d15cb49bc1b3016bcb.webp 400w,
+               /post/masters/back_head_hucdb173c52266abd73a3e5f72ca9b44e7_2187159_fc884cad260072c9e773c1e655e18037.webp 760w,
+               /post/masters/back_head_hucdb173c52266abd73a3e5f72ca9b44e7_2187159_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://edgmin.github.io/post/masters/back_head_hucdb173c52266abd73a3e5f72ca9b44e7_2187159_9d956ce347f2f7d15cb49bc1b3016bcb.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;When I was planning/looking for a master thesis topic, I could not really find something that took my attention at the TU Braunschweig. Then, I decided to look around and, after a few days and emails, I was fortunate to get to know Dr. Golkov from TU Munich. As I planned to learn the behind the scenes of deep learning, before accepting writing my master&amp;rsquo;s thesis at the TU Munich I asked Vladimir about the potential topics I could work on. He offered me a range of topics, but one of them really stand out the crowd: understanding deep learning. That was instantly a match for me, as I was exactly searching for something to comprehensively understand deep learning and its concepts.&lt;/p&gt;
+&lt;p&gt;After a year reading hundreds of papers, having tons of fruitful discussions, and constantly coding, I successfully presented my master&amp;rsquo;s thesis at the TU Braunschweig. Though still an ongoing work, below I present a draft of it with some discussion for those who might be interested. An article on arXiv will also appear soon 😄.&lt;/p&gt;
+&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;heading-1&#34;&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;heading-2&#34;&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;heading-3&#34;&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;heading-4&#34;&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;heading-5&#34;&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;data-efficiency-in-deep-learning&#34;&gt;Data-efficiency in deep learning&lt;/h2&gt;
+&lt;p&gt;Deep learning-based methods rely on many strategies to achieve data-efficiency. One of the most common techniques is to endow models with prior knowledge about the underlying problem by using neural network layers with purposefully tailored properties. This approach lies at the heart of the modern deep learning, but is quite often overlooked by machine learning practitioners.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take a look at the prominent example of convolutional neural networks (CNNs).&lt;/p&gt;
+&lt;p&gt;CNNs are empowered with convolutional and pooling layers, which leverage them with translation equivariance and scale separation capabilities (not to mention the deep natural image initialization prior - but that&amp;rsquo;s worth another post).&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Convolutional neural network. Image credit: &amp;lt;a href=&amp;#34;https://medium.com/swlh/an-overview-on-convolutional-neural-networks-ea48e76fb186&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener&amp;#34;&amp;gt;&amp;lt;strong&amp;gt;Medium&amp;lt;/strong&amp;gt;&amp;lt;/a&amp;gt;&#34; srcset=&#34;
+               /post/masters/cnns_huf86549c46500d4eb201f0cae6f4fca78_56387_852426294e0e4b7ec21258493b8b5cd7.webp 400w,
+               /post/masters/cnns_huf86549c46500d4eb201f0cae6f4fca78_56387_1e5cd0c0577948f3f8379d23fbfb7007.webp 760w,
+               /post/masters/cnns_huf86549c46500d4eb201f0cae6f4fca78_56387_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://edgmin.github.io/post/masters/cnns_huf86549c46500d4eb201f0cae6f4fca78_56387_852426294e0e4b7ec21258493b8b5cd7.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;253&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;These aspects of CNNs are essentialy what make them shine, as they substantially reduce the number of parameters, the associated computational cost, and the amount of data needed for training. Interestingly (and perhaps unnoticed by many), at a more macroscopic level certain architectural design and training strategies are also known to greatly benefit neural networks&amp;rsquo; performance. These strategies can be very diverse and range from a simple cluster assumption to more complex concepts such as adversarial learning. However, there is one interesting difference. Namely, there is evidence that the latter strategies pose a more abstract power, being transferable across different data types and tasks. The problem is that there are neither guidelines about when using such strategies is beneficial, nor clear explanations about how they help to solve issues in deep learning approaches.&lt;/p&gt;
+&lt;p&gt;In my master&amp;rsquo;s thesis, I tried to understand and give a bit of structure to these design strategies/patterns (mostly in the context of unsupervised deep domain adaptation). For the analysis, I have used an existing visual language of the Computer Vision Group of the TU Munich that abstracts out topological details of neural networks, such as type and number of layers. By bringing diverse deep learning techniques under the same umbrella of this visual language, I analyzed and identified more than 20 design patterns employed throughout deep learning. In addition, I tried to understand the different machine learning scenarios where each design pattern is commonly employed by proposing an ontology of machine learning tasks. The list of design patterns together with the proposed ontology formed the basis of a methodology for the design of novel deep learning approaches.&lt;/p&gt;
+&lt;p&gt;As a proof of concept of the proposed methodology, I extended an existing unsupervised (self-supervised contrastive) deep domain adaptation approach by injecting design patterns into it. Interestingly, the changes leveraged state-of-the-art performance on the popular and challenging &lt;a href=&#34;https://arxiv.org/abs/1710.06924&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;VisDA-2017&lt;/a&gt; domain adaptation benchmark, providing empirical evidence that the design patterns are interchangeable across distinct machine learning tasks and data types.&lt;/p&gt;
+&lt;p&gt;For now, I am still working on this topic and performing additional experiments. Nonethless, I am confident that the proposed methodology will be the starting point of a more structured analysis of deep learning approaches, and that it will provide guidelines for the design of novel deep learning approaches.&lt;/p&gt;
+&lt;p&gt;A paper about it is expected to be released soon. So, be tuned!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

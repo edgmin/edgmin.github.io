@@ -1,0 +1,1327 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Edgard Minete" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="An overview of my master&#39;s thesis project" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://edgmin.github.io/post/masters/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1052fab8b7700a3dc49ee23683097d66.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2b1b6d47a67b4a2c33931043b472208_26072_32x32_fill_lanczos_center_3.PNG" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2b1b6d47a67b4a2c33931043b472208_26072_180x180_fill_lanczos_center_3.PNG" />
+
+  <link rel="canonical" href="https://edgmin.github.io/post/masters/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@wowchemy" />
+    <meta property="twitter:creator" content="@wowchemy" />
+  
+  <meta property="og:site_name" content="Edgard Minete" />
+  <meta property="og:url" content="https://edgmin.github.io/post/masters/" />
+  <meta property="og:title" content="Strategies for increasing data-efficiency in deep learning | Edgard Minete" />
+  <meta property="og:description" content="An overview of my master&#39;s thesis project" /><meta property="og:image" content="https://edgmin.github.io/media/icon_hua2b1b6d47a67b4a2c33931043b472208_26072_512x512_fill_lanczos_center_3.PNG" />
+    <meta property="twitter:image" content="https://edgmin.github.io/media/icon_hua2b1b6d47a67b4a2c33931043b472208_26072_512x512_fill_lanczos_center_3.PNG" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-07-17T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-07-17T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://edgmin.github.io/post/masters/"
+  },
+  "headline": "Strategies for increasing data-efficiency in deep learning",
+  
+  "datePublished": "2022-07-17T00:00:00Z",
+  "dateModified": "2022-07-17T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Edgard Minete"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edgard Minete",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://edgmin.github.io/media/icon_hua2b1b6d47a67b4a2c33931043b472208_26072_192x192_fill_lanczos_center_3.PNG"
+    }
+  },
+  "description": "An overview of my master's thesis project"
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Strategies for increasing data-efficiency in deep learning | Edgard Minete</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="0861f70ab11fb2a9980958066dee4b86" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Edgard Minete</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Edgard Minete</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/uploads/CV_Edgard_Minete.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Strategies for increasing data-efficiency in deep learning</h1>
+
+  
+  <p class="page-subtitle">An overview of my master&rsquo;s thesis project</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Edgard Minete</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jul 17, 2022
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>In this post, I would like to talk a bit about the work I developed during my master&rsquo;s thesis at the <a href="https://cvai.in.tum.de/" target="_blank" rel="noopener">Computer Vision &amp; Artificial Intelligence Group</a> of the Technical University of Munich, under the supervision of <a href="https://vision.in.tum.de/members/golkov" target="_blank" rel="noopener">Dr. Vladimir Golkov</a>.</p>
+<p>To begin with, I believe it is worth explaining how I end up writing my master&rsquo;s thesis at the TU Munich, since I was pursuing my master&rsquo;s studies at the TU Braunschweig.</p>
+<p>In my life, I have always been trying to plan the next steps well in advance - though many times it did not work as planned. Further, as evidenced in my previous post &ldquo;A multidisciplinary Journey&rdquo;, I started to enjoy more and more to study the &lsquo;behind the scenes&rsquo; of deep learning. That&rsquo;s it, to really understand the concepts that lead state-of-the-art methods to become what they became.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="What lies ahead? Image credit: &lt;a href=&#34;https://unsplash.com/photos/K2u71wv2eI4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Unsplash&lt;/strong&gt;&lt;/a&gt;" srcset="
+               /post/masters/back_head_hucdb173c52266abd73a3e5f72ca9b44e7_2187159_9d956ce347f2f7d15cb49bc1b3016bcb.webp 400w,
+               /post/masters/back_head_hucdb173c52266abd73a3e5f72ca9b44e7_2187159_fc884cad260072c9e773c1e655e18037.webp 760w,
+               /post/masters/back_head_hucdb173c52266abd73a3e5f72ca9b44e7_2187159_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/post/masters/back_head_hucdb173c52266abd73a3e5f72ca9b44e7_2187159_9d956ce347f2f7d15cb49bc1b3016bcb.webp"
+               width="760"
+               height="507"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>When I was planning/looking for a master thesis topic, I could not really find something that took my attention at the TU Braunschweig. Then, I decided to look around and, after a few days and emails, I was fortunate to get to know Dr. Golkov from TU Munich. As I planned to learn the behind the scenes of deep learning, before accepting writing my master&rsquo;s thesis at the TU Munich I asked Vladimir about the potential topics I could work on. He offered me a range of topics, but one of them really stand out the crowd: understanding deep learning. That was instantly a match for me, as I was exactly searching for something to comprehensively understand deep learning and its concepts.</p>
+<p>After a year reading hundreds of papers, having tons of fruitful discussions, and constantly coding, I successfully presented my master&rsquo;s thesis at the TU Braunschweig. Though still an ongoing work, below I present a draft of it with some discussion for those who might be interested. An article on arXiv will also appear soon 😄.</p>
+<h3 id="heading"></h3>
+<h3 id="heading-1"></h3>
+<h3 id="heading-2"></h3>
+<h3 id="heading-3"></h3>
+<h3 id="heading-4"></h3>
+<h3 id="heading-5"></h3>
+<h2 id="data-efficiency-in-deep-learning">Data-efficiency in deep learning</h2>
+<p>Deep learning-based methods rely on many strategies to achieve data-efficiency. One of the most common techniques is to endow models with prior knowledge about the underlying problem by using neural network layers with purposefully tailored properties. This approach lies at the heart of the modern deep learning, but is quite often overlooked by machine learning practitioners.</p>
+<p>Let&rsquo;s take a look at the prominent example of convolutional neural networks (CNNs).</p>
+<p>CNNs are empowered with convolutional and pooling layers, which leverage them with translation equivariance and scale separation capabilities (not to mention the deep natural image initialization prior - but that&rsquo;s worth another post).</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Convolutional neural network. Image credit: &lt;a href=&#34;https://medium.com/swlh/an-overview-on-convolutional-neural-networks-ea48e76fb186&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Medium&lt;/strong&gt;&lt;/a&gt;" srcset="
+               /post/masters/cnns_huf86549c46500d4eb201f0cae6f4fca78_56387_852426294e0e4b7ec21258493b8b5cd7.webp 400w,
+               /post/masters/cnns_huf86549c46500d4eb201f0cae6f4fca78_56387_1e5cd0c0577948f3f8379d23fbfb7007.webp 760w,
+               /post/masters/cnns_huf86549c46500d4eb201f0cae6f4fca78_56387_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/post/masters/cnns_huf86549c46500d4eb201f0cae6f4fca78_56387_852426294e0e4b7ec21258493b8b5cd7.webp"
+               width="760"
+               height="253"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>These aspects of CNNs are essentialy what make them shine, as they substantially reduce the number of parameters, the associated computational cost, and the amount of data needed for training. Interestingly (and perhaps unnoticed by many), at a more macroscopic level certain architectural design and training strategies are also known to greatly benefit neural networks&rsquo; performance. These strategies can be very diverse and range from a simple cluster assumption to more complex concepts such as adversarial learning. However, there is one interesting difference. Namely, there is evidence that the latter strategies pose a more abstract power, being transferable across different data types and tasks. The problem is that there are neither guidelines about when using such strategies is beneficial, nor clear explanations about how they help to solve issues in deep learning approaches.</p>
+<p>In my master&rsquo;s thesis, I tried to understand and give a bit of structure to these design strategies/patterns (mostly in the context of unsupervised deep domain adaptation). For the analysis, I have used an existing visual language of the Computer Vision Group of the TU Munich that abstracts out topological details of neural networks, such as type and number of layers. By bringing diverse deep learning techniques under the same umbrella of this visual language, I analyzed and identified more than 20 design patterns employed throughout deep learning. In addition, I tried to understand the different machine learning scenarios where each design pattern is commonly employed by proposing an ontology of machine learning tasks. The list of design patterns together with the proposed ontology formed the basis of a methodology for the design of novel deep learning approaches.</p>
+<p>As a proof of concept of the proposed methodology, I extended an existing unsupervised (self-supervised contrastive) deep domain adaptation approach by injecting design patterns into it. Interestingly, the changes leveraged state-of-the-art performance on the popular and challenging <a href="https://arxiv.org/abs/1710.06924" target="_blank" rel="noopener">VisDA-2017</a> domain adaptation benchmark, providing empirical evidence that the design patterns are interchangeable across distinct machine learning tasks and data types.</p>
+<p>For now, I am still working on this topic and performing additional experiments. Nonethless, I am confident that the proposed methodology will be the starting point of a more structured analysis of deep learning approaches, and that it will provide guidelines for the design of novel deep learning approaches.</p>
+<p>A paper about it is expected to be released soon. So, be tuned!</p>
+
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/master-thesis/">Master Thesis</a>
+  
+  <a class="badge badge-light" href="/tag/deep-learning/">Deep Learning</a>
+  
+  <a class="badge badge-light" href="/tag/domain-adaptation/">Domain Adaptation</a>
+  
+  <a class="badge badge-light" href="/tag/self-supervised-learning/">Self-supervised Learning</a>
+  
+  <a class="badge badge-light" href="/tag/unsupervised-learning/">Unsupervised Learning</a>
+  
+  <a class="badge badge-light" href="/tag/contrastive-methods/">Contrastive methods</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://edgmin.github.io/post/masters/&amp;text=Strategies%20for%20increasing%20data-efficiency%20in%20deep%20learning" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://edgmin.github.io/post/masters/&amp;t=Strategies%20for%20increasing%20data-efficiency%20in%20deep%20learning" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Strategies%20for%20increasing%20data-efficiency%20in%20deep%20learning&amp;body=https://edgmin.github.io/post/masters/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://edgmin.github.io/post/masters/&amp;title=Strategies%20for%20increasing%20data-efficiency%20in%20deep%20learning" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Strategies%20for%20increasing%20data-efficiency%20in%20deep%20learning%20https://edgmin.github.io/post/masters/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://edgmin.github.io/post/masters/&amp;title=Strategies%20for%20increasing%20data-efficiency%20in%20deep%20learning" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://edgmin.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu852300a5c733933ac55325f3ad7187d1_1104935_270x270_fill_q75_lanczos_center.jpg" alt="Edgard Minete"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://edgmin.github.io/">Edgard Minete</a></h5>
+      <h6 class="card-subtitle">Research Assistant</h6>
+      <p class="card-text">My research interests include Simultaneous Localization and Mapping (SLAM) and 3D scene reconstruction &amp; understanding for autonomous (aerial) vehicles!</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/EdgardMinete" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/edgmin" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/edgmin/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.3239609ca7abe02ed52d76ffcb22af1d.js"></script>
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+</body>
+</html>

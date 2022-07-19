@@ -5,7 +5,7 @@
     <link>https://edgmin.github.io/tag/robustness/</link>
       <atom:link href="https://edgmin.github.io/tag/robustness/index.xml" rel="self" type="application/rss+xml" />
     <description>Robustness</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 13 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://edgmin.github.io/media/icon_hua2b1b6d47a67b4a2c33931043b472208_26072_512x512_fill_lanczos_center_3.PNG</url>
       <title>Robustness</title>
@@ -13,14 +13,15 @@
     </image>
     
     <item>
-      <title>TUBSRobustCheck</title>
+      <title>TUBSRobustCheck - assessing the robustness of semantic segmentation neural networks</title>
       <link>https://edgmin.github.io/project/tubsrobustcheck/</link>
-      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://edgmin.github.io/project/tubsrobustcheck/</guid>
       <description>&lt;p&gt;Autonomous vehicles need to understand the world around them in order to safely navigate in our complex and highly dynamic city environments. Towards that objective, diverse deep learning approaches have been rather successful. However, recent studies have shown that neural networks can be easily fooled by careful modification of the input image, raising serious concerns about the real robustness of such systems.&lt;/p&gt;
 &lt;p&gt;During the last two years, I have worked as a research assistant under the supervision of &lt;a href=&#34;https://www.tu-braunschweig.de/en/ifn/institute/team/sv/baer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Andreas Bär&lt;/a&gt; at the &lt;a href=&#34;https://www.tu-braunschweig.de/en/ifn/institute/dept/sv&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Signal Processing and Machine Learning Group&lt;/a&gt; of the &lt;a href=&#34;https://www.tu-braunschweig.de/en/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Technische Universität Braunschweig&lt;/a&gt;. During this time, I worked on diverse topics around the robustness of neural networks. Today, I am very happy to share one of the main results of my work, the &lt;a href=&#34;https://github.com/ifnspaml/TUBSRobustCheck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TUBSRobustCheck&lt;/a&gt; toolbox! TUBSRobustCheck is a PyTorch-based, architecture-agnostic toolbox developed to enable researchers to assess the robustness of their semantic segmentation neural networks against diverse attacks and corruptions.&lt;/p&gt;
 &lt;p&gt;Our proposed toolbox is divided into two blocks: &lt;a href=&#34;https://github.com/ifnspaml/TUBSRobustCheck/tree/main/robustness/attacks&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;attacks&lt;/a&gt;, which contains various individual and universal adversarial attacks, and &lt;a href=&#34;https://github.com/ifnspaml/TUBSRobustCheck/tree/main/robustness/corruptions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;corruptions&lt;/a&gt;, which implements common image corruptions, as first introduced by &lt;a href=&#34;https://arxiv.org/pdf/1903.12261.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hendrycks et al, 2019&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Lets now dive deep into some capabilities of our toolbox!&lt;/p&gt;
+&lt;h2 id=&#34;the-tubsrobustcheck-attack-toolbox&#34;&gt;The TUBSRobustCheck Attack toolbox&lt;/h2&gt;
 &lt;p&gt;Among others, our toolbox implements the Fast Gradient Sign Method &lt;a href=&#34;https://arxiv.org/abs/1412.6572&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(FGSM)&lt;/a&gt; (and its iterative and momentum variants), Generalizable Data-free Universal Adversarial Perturbations &lt;a href=&#34;https://arxiv.org/abs/1801.08092&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;(GD-UAP)&lt;/a&gt;, and the Metzen &lt;a href=&#34;https://arxiv.org/abs/1703.01101&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;single image&lt;/a&gt; and &lt;a href=&#34;https://arxiv.org/abs/1704.05712&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;universal&lt;/a&gt; attacks. Below, I show examples that were produced with our toolbox using a &lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S0031320320304143&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SwiftNet&lt;/a&gt; as a semantic segmentation neural network.&lt;/p&gt;
 &lt;p&gt;
 
@@ -82,6 +83,7 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;In this case, instead of fooling the network to produce some pre-defined (static) image, we fool it into misclassifying some target semantic class of the input image. In this case, we produced a targeted adversarial perturbation to fool the neural network into wrongly classifying pixels of pedestrians. (Stop here for a moment and imagine how dangerous it would be to have a system failing/being attacked in this way!)&lt;/p&gt;
+&lt;h2 id=&#34;the-tubsrobustcheck-corruption-toolbox&#34;&gt;The TUBSRobustCheck Corruption toolbox&lt;/h2&gt;
 &lt;p&gt;Apart from adversarial attacks, our toolbox also implements diverse corruptions. For that, we followed the work of &lt;a href=&#34;https://arxiv.org/pdf/1903.12261.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hendrycks et al, 2019&lt;/a&gt; and implemented corruptions of four classes: Noise (Gaussian, shot, impulse, and speckle), Blur (defocus, glass, motion, zoom, and Gaussian), Weather (snow, Frost, fog, brightness, and spatter), and Digital (contrast, elastic transform, pixelate, JPEG compression, and saturate). With these classes, we hope to cover some of the most common types of image corruption.&lt;/p&gt;
 &lt;p&gt;To illustrate the capabilities of our corruption toolbox, below we have some examples:&lt;/p&gt;
 &lt;p&gt;
@@ -113,8 +115,10 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;The idea is that we corrupt images by adding some artifact to them. In turn, these artifacts try to depict real-world scenarios. For instance, the frost weather corruption tries to depict the case where there is frost covering the camera lens. Similarly, the motion blur tries to depict the case where some motion affects the image capture process, etc.&lt;/p&gt;
-&lt;p&gt;In summary: the &lt;a href=&#34;https://github.com/ifnspaml/TUBSRobustCheck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TUBSRobustCheck&lt;/a&gt; is a PyTorch-based, architecture-agnostic toolbox that tries to address diverse challenging scenarios that autonomous systems for semantic segmentation may face in the wild. It contains the most common benchmarks to evaluate the robustness of semantic segmentation neural networks against diverse attacks and corruptions.&lt;/p&gt;
-&lt;p&gt;I hope this project presentation could show you the importance of investigating the robustness of semantic segmentation neural networks. Please ping me a message in case one any doubts and have a good experience using the &lt;a href=&#34;https://github.com/ifnspaml/TUBSRobustCheck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TUBSRobustCheck&lt;/a&gt;!&lt;/p&gt;
+&lt;h2 id=&#34;final-remarks&#34;&gt;Final remarks&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://github.com/ifnspaml/TUBSRobustCheck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TUBSRobustCheck&lt;/a&gt; is a PyTorch-based, architecture-agnostic toolbox that tries to address diverse challenging scenarios that autonomous systems for semantic segmentation may face in the wild. It contains the most common benchmarks to evaluate the robustness of semantic segmentation neural networks against diverse attacks and corruptions.&lt;/p&gt;
+&lt;p&gt;I hope this project presentation could show you the importance of investigating the robustness of semantic segmentation neural networks.  Please ping me a message in case one any doubts and have a good experience using the &lt;a href=&#34;https://github.com/ifnspaml/TUBSRobustCheck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TUBSRobustCheck&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Feel free to share our toolbox using the links below 😃&lt;/p&gt;
 </description>
     </item>
     
