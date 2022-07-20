@@ -55,7 +55,7 @@
 &lt;h3 id=&#34;heading-3&#34;&gt;&lt;/h3&gt;
 &lt;h3 id=&#34;heading-4&#34;&gt;&lt;/h3&gt;
 &lt;h3 id=&#34;heading-5&#34;&gt;&lt;/h3&gt;
-&lt;h2 id=&#34;data-efficiency-in-deep-learning&#34;&gt;Data-efficiency in deep learning&lt;/h2&gt;
+&lt;h2 id=&#34;data-efficiency-in-deep-learning&#34;&gt;Data-efficiency in Deep Learning&lt;/h2&gt;
 &lt;p&gt;Deep learning-based methods rely on many strategies to achieve data-efficiency. One of the most common techniques is to endow models with prior knowledge about the underlying problem by using neural network layers with purposefully tailored properties. This approach lies at the heart of deep learning, but is quite often overlooked by machine learning practitioners.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s take a look at the prominent example of convolutional neural networks (CNNs).&lt;/p&gt;
 &lt;p&gt;CNNs are empowered with convolutional and pooling layers, which leverage them with translation equivariance and scale separation capabilities (not to mention the deep natural image initialization prior - but that&amp;rsquo;s worth another post).&lt;/p&gt;
